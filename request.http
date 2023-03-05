@@ -1,0 +1,25 @@
+POST http://localhost:3030/add-server HTTP/1.1
+
+{
+    "serverName": "server-200"
+}
+
+###
+POST http://localhost:3030/remove-server HTTP/1.1
+
+{
+    "serverName": "server-200"
+}
+
+###
+Get http://localhost:3030/get-data?key=key-88 HTTP/1.1
+
+###
+POST http://localhost:3030/add-data HTTP/1.1
+
+{
+    "key": "key-200",
+    "value": {
+        "name": "arun"
+    }
+}
